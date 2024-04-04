@@ -60,6 +60,7 @@ html {
     color: black;
     font-style: normal;
     text-align: left;
+    line-height: 1.5;
 }
 
 body {
@@ -75,12 +76,7 @@ body {
         padding-top: 4vh;
         padding-bottom: 0vh;
         width: 90vw;
-    }
-
-    header {
-        background-color: rgba(0, 0, 0, 0.636);
-    }
-    
+    }    
 }
 
 section {
@@ -104,6 +100,22 @@ aside {
 
 main {
     width: 75%;
+}
+
+@media only screen and (max-width: 600px) {
+    article {
+        display: block;
+    }
+
+    aside {
+        width: 100%;
+        padding-right: 0%;
+        padding-bottom: 0.5vh;    
+    }
+    
+    main {
+        width: 100%;
+    }   
 }
 
 #last-article {
@@ -158,8 +170,6 @@ p {
     font-size: var(--p-size);
     font-weight: var(--p-weight);
     color: var(--p-color);
-    /* change interline size */
-    line-height: 1.3;
 }
 
 
